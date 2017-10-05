@@ -1,6 +1,6 @@
 def call(test){
 
-	echo "dude"
+	echo test
     // sh ''' '''+unityAppPath+''' -quit -batchmode \
     // -buildTarget '''+buildTarget+''' \
     // -development true \
