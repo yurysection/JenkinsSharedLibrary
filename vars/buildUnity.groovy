@@ -23,9 +23,9 @@ def call(curWorkspace, buildTarget, localBuildPath, appName, assetBundlesPath, b
     -stackTraceException ScriptOnly \
     -deviceFilter "ARMv7" \
     -bundleVersion '''+bundleVersion+''' \
-    -changeList p4_changelist \
-    -bundleIdentifier com.section.jobBaseName \
-    -appBasename jobBaseName \
+    -changeList '''+p4_changelist+''' \
+    -bundleIdentifier com.section.'''+jobBaseName+''' \
+    -appBasename '''+jobBaseName+''' \
     -localBuildPath "AssetBundles" \
     -cleanedLogFile '''+localBuildPath+'''/cleanedUnityLog.txt \
     -logFile '''+localBuildPath+'''/fullUnityLog.txt \
